@@ -16,6 +16,21 @@
 		84EB48822A22F6B8002BFD5F /* Codigo_CodeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48812A22F6B8002BFD5F /* Codigo_CodeTestTests.swift */; };
 		84EB488C2A22F6B8002BFD5F /* Codigo_CodeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB488B2A22F6B8002BFD5F /* Codigo_CodeTestUITests.swift */; };
 		84EB488E2A22F6B8002BFD5F /* Codigo_CodeTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB488D2A22F6B8002BFD5F /* Codigo_CodeTestUITestsLaunchTests.swift */; };
+		84EB489E2A22F776002BFD5F /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB489D2A22F776002BFD5F /* Welcome.storyboard */; };
+		84EB48A02A22FA49002BFD5F /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB489F2A22FA49002BFD5F /* Welcome.swift */; };
+		84EB48A22A22FCE4002BFD5F /* WelcomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48A12A22FCE4002BFD5F /* WelcomeModule.swift */; };
+		84EB48AC2A22FF25002BFD5F /* Chivo-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48A42A22FF23002BFD5F /* Chivo-BlackItalic.ttf */; };
+		84EB48AD2A22FF25002BFD5F /* Chivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48A52A22FF23002BFD5F /* Chivo-Bold.ttf */; };
+		84EB48AE2A22FF25002BFD5F /* Chivo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48A62A22FF23002BFD5F /* Chivo-Light.ttf */; };
+		84EB48AF2A22FF25002BFD5F /* Chivo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48A72A22FF24002BFD5F /* Chivo-BoldItalic.ttf */; };
+		84EB48B02A22FF25002BFD5F /* Chivo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48A82A22FF24002BFD5F /* Chivo-LightItalic.ttf */; };
+		84EB48B12A22FF25002BFD5F /* Chivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48A92A22FF24002BFD5F /* Chivo-Regular.ttf */; };
+		84EB48B22A22FF25002BFD5F /* Chivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48AA2A22FF24002BFD5F /* Chivo-Black.ttf */; };
+		84EB48B32A22FF25002BFD5F /* Chivo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48AB2A22FF25002BFD5F /* Chivo-Italic.ttf */; };
+		84EB48B52A22FFB4002BFD5F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48B42A22FFB4002BFD5F /* Fonts.swift */; };
+		84EB48B82A230234002BFD5F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48B72A230234002BFD5F /* UIView+Extension.swift */; };
+		84EB48BA2A2302D7002BFD5F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48B92A2302D7002BFD5F /* Colors.xcassets */; };
+		84EB48BD2A23031C002BFD5F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48BC2A23031C002BFD5F /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +64,21 @@
 		84EB48872A22F6B8002BFD5F /* Codigo_CodeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Codigo_CodeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EB488B2A22F6B8002BFD5F /* Codigo_CodeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codigo_CodeTestUITests.swift; sourceTree = "<group>"; };
 		84EB488D2A22F6B8002BFD5F /* Codigo_CodeTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codigo_CodeTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84EB489D2A22F776002BFD5F /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		84EB489F2A22FA49002BFD5F /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		84EB48A12A22FCE4002BFD5F /* WelcomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModule.swift; sourceTree = "<group>"; };
+		84EB48A42A22FF23002BFD5F /* Chivo-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BlackItalic.ttf"; sourceTree = "<group>"; };
+		84EB48A52A22FF23002BFD5F /* Chivo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Bold.ttf"; sourceTree = "<group>"; };
+		84EB48A62A22FF23002BFD5F /* Chivo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Light.ttf"; sourceTree = "<group>"; };
+		84EB48A72A22FF24002BFD5F /* Chivo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		84EB48A82A22FF24002BFD5F /* Chivo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-LightItalic.ttf"; sourceTree = "<group>"; };
+		84EB48A92A22FF24002BFD5F /* Chivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Regular.ttf"; sourceTree = "<group>"; };
+		84EB48AA2A22FF24002BFD5F /* Chivo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Black.ttf"; sourceTree = "<group>"; };
+		84EB48AB2A22FF25002BFD5F /* Chivo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Italic.ttf"; sourceTree = "<group>"; };
+		84EB48B42A22FFB4002BFD5F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		84EB48B72A230234002BFD5F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		84EB48B92A2302D7002BFD5F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		84EB48BC2A23031C002BFD5F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +129,10 @@
 		84EB48692A22F6B6002BFD5F /* Codigo_CodeTest */ = {
 			isa = PBXGroup;
 			children = (
+				84EB48BB2A230312002BFD5F /* Colors */,
+				84EB48B62A230227002BFD5F /* Extensions */,
+				84EB48A32A22FF07002BFD5F /* Fonts */,
+				84EB489A2A22F754002BFD5F /* State_Data_Management */,
 				84EB486A2A22F6B6002BFD5F /* AppDelegate.swift */,
 				84EB486C2A22F6B6002BFD5F /* SceneDelegate.swift */,
 				84EB486E2A22F6B6002BFD5F /* ViewController.swift */,
@@ -125,6 +159,65 @@
 				84EB488D2A22F6B8002BFD5F /* Codigo_CodeTestUITestsLaunchTests.swift */,
 			);
 			path = Codigo_CodeTestUITests;
+			sourceTree = "<group>";
+		};
+		84EB489A2A22F754002BFD5F /* State_Data_Management */ = {
+			isa = PBXGroup;
+			children = (
+				84EB489B2A22F767002BFD5F /* Welcome */,
+			);
+			path = State_Data_Management;
+			sourceTree = "<group>";
+		};
+		84EB489B2A22F767002BFD5F /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				84EB489C2A22F76F002BFD5F /* View */,
+				84EB48A12A22FCE4002BFD5F /* WelcomeModule.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		84EB489C2A22F76F002BFD5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84EB489D2A22F776002BFD5F /* Welcome.storyboard */,
+				84EB489F2A22FA49002BFD5F /* Welcome.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84EB48A32A22FF07002BFD5F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48AA2A22FF24002BFD5F /* Chivo-Black.ttf */,
+				84EB48A42A22FF23002BFD5F /* Chivo-BlackItalic.ttf */,
+				84EB48A52A22FF23002BFD5F /* Chivo-Bold.ttf */,
+				84EB48A72A22FF24002BFD5F /* Chivo-BoldItalic.ttf */,
+				84EB48AB2A22FF25002BFD5F /* Chivo-Italic.ttf */,
+				84EB48A62A22FF23002BFD5F /* Chivo-Light.ttf */,
+				84EB48A82A22FF24002BFD5F /* Chivo-LightItalic.ttf */,
+				84EB48A92A22FF24002BFD5F /* Chivo-Regular.ttf */,
+				84EB48B42A22FFB4002BFD5F /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84EB48B62A230227002BFD5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48B72A230234002BFD5F /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84EB48BB2A230312002BFD5F /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48B92A2302D7002BFD5F /* Colors.xcassets */,
+				84EB48BC2A23031C002BFD5F /* Colors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +324,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EB48B02A22FF25002BFD5F /* Chivo-LightItalic.ttf in Resources */,
+				84EB48B12A22FF25002BFD5F /* Chivo-Regular.ttf in Resources */,
+				84EB48BA2A2302D7002BFD5F /* Colors.xcassets in Resources */,
 				84EB48772A22F6B8002BFD5F /* LaunchScreen.storyboard in Resources */,
+				84EB48AE2A22FF25002BFD5F /* Chivo-Light.ttf in Resources */,
+				84EB489E2A22F776002BFD5F /* Welcome.storyboard in Resources */,
 				84EB48742A22F6B8002BFD5F /* Assets.xcassets in Resources */,
 				84EB48722A22F6B6002BFD5F /* Main.storyboard in Resources */,
+				84EB48AF2A22FF25002BFD5F /* Chivo-BoldItalic.ttf in Resources */,
+				84EB48B32A22FF25002BFD5F /* Chivo-Italic.ttf in Resources */,
+				84EB48AC2A22FF25002BFD5F /* Chivo-BlackItalic.ttf in Resources */,
+				84EB48AD2A22FF25002BFD5F /* Chivo-Bold.ttf in Resources */,
+				84EB48B22A22FF25002BFD5F /* Chivo-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EB48A22A22FCE4002BFD5F /* WelcomeModule.swift in Sources */,
+				84EB48BD2A23031C002BFD5F /* Colors.swift in Sources */,
+				84EB48B82A230234002BFD5F /* UIView+Extension.swift in Sources */,
+				84EB48A02A22FA49002BFD5F /* Welcome.swift in Sources */,
 				84EB486F2A22F6B6002BFD5F /* ViewController.swift in Sources */,
 				84EB486B2A22F6B6002BFD5F /* AppDelegate.swift in Sources */,
+				84EB48B52A22FFB4002BFD5F /* Fonts.swift in Sources */,
 				84EB486D2A22F6B6002BFD5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
