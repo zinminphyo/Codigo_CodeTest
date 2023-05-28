@@ -14,7 +14,6 @@ struct MovieDetailsModel: Decodable {
     var backdropFullPath: String {
         return "https://image.tmdb.org/t/p/original/" + backdropPath
     }
-    let collection: String?
     let budget: Int
     let homepage: String
     let originalTitle: String
@@ -33,7 +32,6 @@ struct MovieDetailsModel: Decodable {
     enum CodingKeys: String, CodingKey {
         case adult, budget, homepage, overview, popularity, runtime, tagline
         case backdropPath = "backdrop_path"
-        case collection = "belongs_to_collection"
         case originalTitle = "original_title"
         case posterPath = "poster_path"
         case releaseDate = "release_date"
