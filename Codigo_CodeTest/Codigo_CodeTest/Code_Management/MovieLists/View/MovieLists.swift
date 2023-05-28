@@ -92,4 +92,9 @@ extension MovieLists: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return indexPath.section == 0 ? 250 : 150
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = MovieDetailsModule.createModule() else {return}
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

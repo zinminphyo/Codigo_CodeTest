@@ -50,6 +50,11 @@
 		84EB48EB2A234022002BFD5F /* PopularMovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48E92A234022002BFD5F /* PopularMovieCollectionViewCell.xib */; };
 		84EB48EF2A2346AF002BFD5F /* UpcomingMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48ED2A2346AF002BFD5F /* UpcomingMovieTableViewCell.swift */; };
 		84EB48F02A2346AF002BFD5F /* UpcomingMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48EE2A2346AF002BFD5F /* UpcomingMovieTableViewCell.xib */; };
+		84EB48F42A234D74002BFD5F /* MovieDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48F32A234D74002BFD5F /* MovieDetails.storyboard */; };
+		84EB48F62A234D85002BFD5F /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48F52A234D85002BFD5F /* MovieDetails.swift */; };
+		84EB48F82A234DAD002BFD5F /* MovieDetialsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48F72A234DAD002BFD5F /* MovieDetialsModule.swift */; };
+		84EB48FC2A235626002BFD5F /* CasterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48FA2A235626002BFD5F /* CasterCollectionViewCell.swift */; };
+		84EB48FD2A235626002BFD5F /* CasterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48FB2A235626002BFD5F /* CasterCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,11 @@
 		84EB48E92A234022002BFD5F /* PopularMovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularMovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		84EB48ED2A2346AF002BFD5F /* UpcomingMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMovieTableViewCell.swift; sourceTree = "<group>"; };
 		84EB48EE2A2346AF002BFD5F /* UpcomingMovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingMovieTableViewCell.xib; sourceTree = "<group>"; };
+		84EB48F32A234D74002BFD5F /* MovieDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetails.storyboard; sourceTree = "<group>"; };
+		84EB48F52A234D85002BFD5F /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		84EB48F72A234DAD002BFD5F /* MovieDetialsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetialsModule.swift; sourceTree = "<group>"; };
+		84EB48FA2A235626002BFD5F /* CasterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasterCollectionViewCell.swift; sourceTree = "<group>"; };
+		84EB48FB2A235626002BFD5F /* CasterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CasterCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +320,7 @@
 		84EB48D32A2339B1002BFD5F /* Code_Management */ = {
 			isa = PBXGroup;
 			children = (
+				84EB48F12A234D61002BFD5F /* MovieDetials */,
 				84EB48D42A2339BA002BFD5F /* MovieLists */,
 			);
 			path = Code_Management;
@@ -379,6 +390,34 @@
 				84EB48EE2A2346AF002BFD5F /* UpcomingMovieTableViewCell.xib */,
 			);
 			path = UpcomingMovieTableViewCell;
+			sourceTree = "<group>";
+		};
+		84EB48F12A234D61002BFD5F /* MovieDetials */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48F22A234D68002BFD5F /* View */,
+				84EB48F72A234DAD002BFD5F /* MovieDetialsModule.swift */,
+			);
+			path = MovieDetials;
+			sourceTree = "<group>";
+		};
+		84EB48F22A234D68002BFD5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48F92A23560C002BFD5F /* cell */,
+				84EB48F32A234D74002BFD5F /* MovieDetails.storyboard */,
+				84EB48F52A234D85002BFD5F /* MovieDetails.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84EB48F92A23560C002BFD5F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48FA2A235626002BFD5F /* CasterCollectionViewCell.swift */,
+				84EB48FB2A235626002BFD5F /* CasterCollectionViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,6 +528,7 @@
 				84EB48EB2A234022002BFD5F /* PopularMovieCollectionViewCell.xib in Resources */,
 				84EB48B12A22FF25002BFD5F /* Chivo-Regular.ttf in Resources */,
 				84EB48E62A233F65002BFD5F /* PopularMovieTableViewCell.xib in Resources */,
+				84EB48FD2A235626002BFD5F /* CasterCollectionViewCell.xib in Resources */,
 				84EB48CA2A230B3C002BFD5F /* FormTableViewCell.xib in Resources */,
 				84EB48BA2A2302D7002BFD5F /* Colors.xcassets in Resources */,
 				84EB48772A22F6B8002BFD5F /* LaunchScreen.storyboard in Resources */,
@@ -497,6 +537,7 @@
 				84EB48AE2A22FF25002BFD5F /* Chivo-Light.ttf in Resources */,
 				84EB489E2A22F776002BFD5F /* Welcome.storyboard in Resources */,
 				84EB48742A22F6B8002BFD5F /* Assets.xcassets in Resources */,
+				84EB48F42A234D74002BFD5F /* MovieDetails.storyboard in Resources */,
 				84EB48722A22F6B6002BFD5F /* Main.storyboard in Resources */,
 				84EB48AF2A22FF25002BFD5F /* Chivo-BoldItalic.ttf in Resources */,
 				84EB48B32A22FF25002BFD5F /* Chivo-Italic.ttf in Resources */,
@@ -541,9 +582,12 @@
 				84EB48C92A230B3C002BFD5F /* FormTableViewCell.swift in Sources */,
 				84EB486F2A22F6B6002BFD5F /* ViewController.swift in Sources */,
 				84EB486B2A22F6B6002BFD5F /* AppDelegate.swift in Sources */,
+				84EB48F82A234DAD002BFD5F /* MovieDetialsModule.swift in Sources */,
+				84EB48F62A234D85002BFD5F /* MovieDetails.swift in Sources */,
 				84EB48E52A233F65002BFD5F /* PopularMovieTableViewCell.swift in Sources */,
 				84EB48EA2A234022002BFD5F /* PopularMovieCollectionViewCell.swift in Sources */,
 				84EB48B52A22FFB4002BFD5F /* Fonts.swift in Sources */,
+				84EB48FC2A235626002BFD5F /* CasterCollectionViewCell.swift in Sources */,
 				84EB48C32A23083E002BFD5F /* CreateAccount.swift in Sources */,
 				84EB48D12A23151F002BFD5F /* DOBTableViewCell.swift in Sources */,
 				84EB486D2A22F6B6002BFD5F /* SceneDelegate.swift in Sources */,
