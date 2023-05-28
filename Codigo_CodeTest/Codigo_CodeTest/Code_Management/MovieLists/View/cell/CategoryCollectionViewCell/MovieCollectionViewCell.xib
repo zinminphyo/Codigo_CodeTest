@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chivo-Regular.ttf">
+            <string>Chivo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="Codigo_CodeTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="71" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="71" height="35"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q0-AD-2rD">
+                        <rect key="frame" x="7" y="7" width="57" height="21"/>
+                        <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IP-Lq-ARB">
+                        <rect key="frame" x="7" y="26" width="57" height="2"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="06m-nW-D03"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="6q0-AD-2rD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="B7D-3v-yDp"/>
+                <constraint firstItem="3IP-Lq-ARB" firstAttribute="leading" secondItem="6q0-AD-2rD" secondAttribute="leading" id="aIQ-2a-E75"/>
+                <constraint firstItem="6q0-AD-2rD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="gBM-SC-BuR"/>
+                <constraint firstAttribute="trailing" secondItem="6q0-AD-2rD" secondAttribute="trailing" constant="7" id="hkk-f9-LCH"/>
+                <constraint firstItem="3IP-Lq-ARB" firstAttribute="trailing" secondItem="6q0-AD-2rD" secondAttribute="trailing" id="pEJ-Xz-ZqH"/>
+                <constraint firstItem="3IP-Lq-ARB" firstAttribute="bottom" secondItem="6q0-AD-2rD" secondAttribute="bottom" id="pS4-hO-BI8"/>
+                <constraint firstAttribute="bottom" secondItem="6q0-AD-2rD" secondAttribute="bottom" constant="7" id="pcO-EF-XEk"/>
+            </constraints>
+            <size key="customSize" width="71" height="35"/>
+            <connections>
+                <outlet property="titleLabel" destination="6q0-AD-2rD" id="707-MV-1aM"/>
+                <outlet property="underlineView" destination="3IP-Lq-ARB" id="qCl-3H-pGa"/>
+            </connections>
+            <point key="canvasLocation" x="89.312977099236633" y="-17.95774647887324"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
