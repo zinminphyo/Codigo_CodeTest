@@ -113,7 +113,8 @@ class Welcome: UIViewController {
 extension Welcome {
     
     @objc private func didTapCreateNewAccountBtn() {
-        print("Tapped Create New Account Button.")
+        guard let vc = CreateAccountModule.createModule() else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

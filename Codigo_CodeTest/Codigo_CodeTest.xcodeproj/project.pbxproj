@@ -31,6 +31,14 @@
 		84EB48B82A230234002BFD5F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48B72A230234002BFD5F /* UIView+Extension.swift */; };
 		84EB48BA2A2302D7002BFD5F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48B92A2302D7002BFD5F /* Colors.xcassets */; };
 		84EB48BD2A23031C002BFD5F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48BC2A23031C002BFD5F /* Colors.swift */; };
+		84EB48C12A230814002BFD5F /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48C02A230814002BFD5F /* CreateAccount.storyboard */; };
+		84EB48C32A23083E002BFD5F /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48C22A23083E002BFD5F /* CreateAccount.swift */; };
+		84EB48C52A23085A002BFD5F /* CreateAccountModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48C42A230859002BFD5F /* CreateAccountModule.swift */; };
+		84EB48C92A230B3C002BFD5F /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48C72A230B3C002BFD5F /* FormTableViewCell.swift */; };
+		84EB48CA2A230B3C002BFD5F /* FormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48C82A230B3C002BFD5F /* FormTableViewCell.xib */; };
+		84EB48CD2A230FB8002BFD5F /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48CC2A230FB8002BFD5F /* CreateAccountViewModel.swift */; };
+		84EB48D12A23151F002BFD5F /* DOBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EB48CF2A23151F002BFD5F /* DOBTableViewCell.swift */; };
+		84EB48D22A23151F002BFD5F /* DOBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB48D02A23151F002BFD5F /* DOBTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +87,14 @@
 		84EB48B72A230234002BFD5F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		84EB48B92A2302D7002BFD5F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		84EB48BC2A23031C002BFD5F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		84EB48C02A230814002BFD5F /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+		84EB48C22A23083E002BFD5F /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		84EB48C42A230859002BFD5F /* CreateAccountModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountModule.swift; sourceTree = "<group>"; };
+		84EB48C72A230B3C002BFD5F /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		84EB48C82A230B3C002BFD5F /* FormTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTableViewCell.xib; sourceTree = "<group>"; };
+		84EB48CC2A230FB8002BFD5F /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		84EB48CF2A23151F002BFD5F /* DOBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBTableViewCell.swift; sourceTree = "<group>"; };
+		84EB48D02A23151F002BFD5F /* DOBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DOBTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +180,7 @@
 		84EB489A2A22F754002BFD5F /* State_Data_Management */ = {
 			isa = PBXGroup;
 			children = (
+				84EB48BE2A2307FC002BFD5F /* CreateAccount */,
 				84EB489B2A22F767002BFD5F /* Welcome */,
 			);
 			path = State_Data_Management;
@@ -218,6 +235,53 @@
 				84EB48BC2A23031C002BFD5F /* Colors.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		84EB48BE2A2307FC002BFD5F /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48CB2A230FAC002BFD5F /* ViewModel */,
+				84EB48BF2A230809002BFD5F /* View */,
+				84EB48C42A230859002BFD5F /* CreateAccountModule.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		84EB48BF2A230809002BFD5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48C62A230B29002BFD5F /* cell */,
+				84EB48C02A230814002BFD5F /* CreateAccount.storyboard */,
+				84EB48C22A23083E002BFD5F /* CreateAccount.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84EB48C62A230B29002BFD5F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48CE2A23150D002BFD5F /* DOBTableViewCell */,
+				84EB48C72A230B3C002BFD5F /* FormTableViewCell.swift */,
+				84EB48C82A230B3C002BFD5F /* FormTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		84EB48CB2A230FAC002BFD5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48CC2A230FB8002BFD5F /* CreateAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84EB48CE2A23150D002BFD5F /* DOBTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84EB48CF2A23151F002BFD5F /* DOBTableViewCell.swift */,
+				84EB48D02A23151F002BFD5F /* DOBTableViewCell.xib */,
+			);
+			path = DOBTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +390,7 @@
 			files = (
 				84EB48B02A22FF25002BFD5F /* Chivo-LightItalic.ttf in Resources */,
 				84EB48B12A22FF25002BFD5F /* Chivo-Regular.ttf in Resources */,
+				84EB48CA2A230B3C002BFD5F /* FormTableViewCell.xib in Resources */,
 				84EB48BA2A2302D7002BFD5F /* Colors.xcassets in Resources */,
 				84EB48772A22F6B8002BFD5F /* LaunchScreen.storyboard in Resources */,
 				84EB48AE2A22FF25002BFD5F /* Chivo-Light.ttf in Resources */,
@@ -336,6 +401,8 @@
 				84EB48B32A22FF25002BFD5F /* Chivo-Italic.ttf in Resources */,
 				84EB48AC2A22FF25002BFD5F /* Chivo-BlackItalic.ttf in Resources */,
 				84EB48AD2A22FF25002BFD5F /* Chivo-Bold.ttf in Resources */,
+				84EB48D22A23151F002BFD5F /* DOBTableViewCell.xib in Resources */,
+				84EB48C12A230814002BFD5F /* CreateAccount.storyboard in Resources */,
 				84EB48B22A22FF25002BFD5F /* Chivo-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,10 +432,15 @@
 				84EB48BD2A23031C002BFD5F /* Colors.swift in Sources */,
 				84EB48B82A230234002BFD5F /* UIView+Extension.swift in Sources */,
 				84EB48A02A22FA49002BFD5F /* Welcome.swift in Sources */,
+				84EB48CD2A230FB8002BFD5F /* CreateAccountViewModel.swift in Sources */,
+				84EB48C92A230B3C002BFD5F /* FormTableViewCell.swift in Sources */,
 				84EB486F2A22F6B6002BFD5F /* ViewController.swift in Sources */,
 				84EB486B2A22F6B6002BFD5F /* AppDelegate.swift in Sources */,
 				84EB48B52A22FFB4002BFD5F /* Fonts.swift in Sources */,
+				84EB48C32A23083E002BFD5F /* CreateAccount.swift in Sources */,
+				84EB48D12A23151F002BFD5F /* DOBTableViewCell.swift in Sources */,
 				84EB486D2A22F6B6002BFD5F /* SceneDelegate.swift in Sources */,
+				84EB48C52A23085A002BFD5F /* CreateAccountModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
