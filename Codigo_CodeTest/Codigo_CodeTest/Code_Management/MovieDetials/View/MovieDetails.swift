@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class MovieDetails: UIViewController {
     
@@ -22,6 +23,10 @@ class MovieDetails: UIViewController {
     @IBOutlet weak var casterCollectionView: UICollectionView!
     @IBOutlet weak var viewAllButton: UIButton!
     @IBOutlet weak var seperatorView: UIView!
+    
+    var viewModel: MovieDetailsViewModel? = nil
+    
+    private var cancellable = Set<AnyCancellable>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +40,7 @@ class MovieDetails: UIViewController {
         configureCasterCollectionView()
         configureViewAllButton()
         configureSeperatorView()
+        configureViewModel()
     }
     
     private func configureBackButton() {
@@ -59,6 +65,23 @@ class MovieDetails: UIViewController {
     private func configureSeperatorView() {
         seperatorView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         seperatorView.layer.cornerRadius = 25
+    }
+    
+    private func configureViewModel() {
+        viewModel?.fetchMovieDetails()
+        
+        viewModel?.movieDetails
+            .sink(receiveCompletion: { error in
+                print("Error is \(String(describing: error))")
+            }, receiveValue: { [weak self] dettils in
+                guard let self = self else { return }
+                self.movieDetailsImageView.kf.setImage(with: URL(string: dettils.posterFullPath))
+                self.movieNameLabel.text = dettils.originalTitle
+                self.moviefavouriteCountLabel.text = String(dettils.voteAverage) + " %"
+                self.movieReleasedDateLabel.text = dettils.releaseDate
+                self.movieDescLabel.text = dettils.overview
+            })
+            .store(in: &cancellable)
     }
 
 }

@@ -47,7 +47,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-Hn-Tlx">
-                                <rect key="frame" x="0.0" y="178" width="393" height="640"/>
+                                <rect key="frame" x="24" y="178" width="345" height="640"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -56,11 +56,11 @@
                         <constraints>
                             <constraint firstItem="0KT-Hn-Tlx" firstAttribute="top" secondItem="ZwJ-Fh-mRk" secondAttribute="bottom" id="1go-Ky-ibR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0KT-Hn-Tlx" secondAttribute="bottom" id="2cK-oE-Qyq"/>
-                            <constraint firstItem="0KT-Hn-Tlx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6xg-8D-6Mv"/>
+                            <constraint firstItem="0KT-Hn-Tlx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="6xg-8D-6Mv"/>
                             <constraint firstItem="qI6-jE-bar" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="92K-vC-taK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZwJ-Fh-mRk" secondAttribute="trailing" id="P3y-kv-eSh"/>
                             <constraint firstItem="qI6-jE-bar" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Ucg-qC-Rpv"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0KT-Hn-Tlx" secondAttribute="trailing" id="fTt-aP-YS3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0KT-Hn-Tlx" secondAttribute="trailing" constant="24" id="fTt-aP-YS3"/>
                             <constraint firstItem="ZwJ-Fh-mRk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rz2-iC-BZF"/>
                             <constraint firstItem="ZwJ-Fh-mRk" firstAttribute="top" secondItem="qI6-jE-bar" secondAttribute="bottom" constant="24" id="uxu-QA-UAL"/>
                         </constraints>

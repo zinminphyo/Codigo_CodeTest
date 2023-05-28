@@ -60,4 +60,10 @@ class PopularMovieCollectionViewCell: UICollectionViewCell {
     @objc func didTapFavouriteBtn() {
         
     }
+    
+    func renderUI(movie: Movie) {
+        imageView.kf.setImage(with: URL(string: movie.posterFullPath))
+        movieNameLabel.text = movie.title
+        popularPercentageLabel.text = String(movie.popularity)
+    }
 }

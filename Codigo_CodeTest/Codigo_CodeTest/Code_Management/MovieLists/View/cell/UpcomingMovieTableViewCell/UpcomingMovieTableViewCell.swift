@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class UpcomingMovieTableViewCell: UITableViewCell {
     
@@ -64,5 +65,13 @@ class UpcomingMovieTableViewCell: UITableViewCell {
     
     @objc func didTapLikeBtn() {
         print("Tapped Like Button.")
+    }
+    
+    func renderUI(movie: Movie) {
+        movieNameLabel.text = movie.title
+        movieImageView.kf.setImage(with: URL(string: movie.backdropFullPath))
+        movieDescLabel.text = movie.overview
+        likeCountLabel.text = String(movie.popularity)
+        commentCountLabel.text = String(movie.vote_count)
     }
 }

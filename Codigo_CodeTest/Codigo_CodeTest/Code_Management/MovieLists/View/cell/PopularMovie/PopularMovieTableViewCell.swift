@@ -15,6 +15,12 @@ class PopularMovieTableViewCell: UITableViewCell {
         return String(describing: Self.self)
     }
 
+    private var movieLists: [Movie] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -44,15 +50,20 @@ class PopularMovieTableViewCell: UITableViewCell {
         collectionView.showsHorizontalScrollIndicator = false
     }
     
+    func updateUI(lists: [Movie]) {
+        self.movieLists = lists
+    }
+    
 }
 
 extension PopularMovieTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return movieLists.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularMovieCollectionViewCell.reuseIdentifier, for: indexPath) as? PopularMovieCollectionViewCell else { return UICollectionViewCell() }
+        cell.renderUI(movie: movieLists[indexPath.row])
         return cell
     }
 }

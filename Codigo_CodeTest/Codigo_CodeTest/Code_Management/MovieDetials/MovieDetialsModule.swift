@@ -10,9 +10,11 @@ import UIKit
 
 
 enum MovieDetailsModule {
-    static func createModule() -> MovieDetails? {
+    static func createModule(id: Int) -> MovieDetails? {
         let st = UIStoryboard(name: "MovieDetails", bundle: .main)
         guard let vc = st.instantiateViewController(withIdentifier: String(describing: MovieDetails.self)) as? MovieDetails else { return nil }
+        let viewModel = MovieDetailsViewModel(movieId: id)
+        vc.viewModel = viewModel
         return vc
     }
 }

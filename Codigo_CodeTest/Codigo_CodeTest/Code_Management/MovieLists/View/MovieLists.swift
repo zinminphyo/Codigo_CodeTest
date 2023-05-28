@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import Combine
 
 class MovieLists: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var movieListsTableView: UITableView!
+    
+    var viewModel: MovieListsViewModel? = nil
+    
+    
+    private var cancellable = Set<AnyCancellable>()
+    private var popularMovieLists: [Movie] = []
+    private var upcomingMovieLists: [Movie] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +32,7 @@ class MovieLists: UIViewController {
         configureTitleLabel()
         configureCategoryCollectionView()
         configureTableView()
+        configureViewModel()
     }
     
     private func configureTitleLabel() {
@@ -48,8 +57,36 @@ class MovieLists: UIViewController {
         movieListsTableView.register(UINib(nibName: String(describing: PopularMovieTableViewCell.self), bundle: nil), forCellReuseIdentifier: PopularMovieTableViewCell.reuseIdentifier)
         movieListsTableView.register(UINib(nibName: String(describing: UpcomingMovieTableViewCell.self), bundle: nil), forCellReuseIdentifier: UpcomingMovieTableViewCell.reuseIdentifier)
         movieListsTableView.separatorStyle = .none
+        movieListsTableView.showsVerticalScrollIndicator = false
+        movieListsTableView.showsHorizontalScrollIndicator = false
         movieListsTableView.dataSource = self
         movieListsTableView.delegate = self
+    }
+    
+    private func configureViewModel() {
+        
+        viewModel?.popularLists
+            .sink(receiveCompletion: { completion in
+                print("Error is \(String(describing: completion))")
+            }, receiveValue: { [weak self] lists in
+                guard let self = self else { return }
+                self.popularMovieLists = lists
+                self.movieListsTableView.reloadSections([0], with: .fade)
+            })
+            .store(in: &cancellable)
+        
+        viewModel?.upcomingLists
+            .sink(receiveCompletion: { error in
+                print("Error is \(String(describing: error))")
+            }, receiveValue: { [weak self] lists in
+                guard let self = self else { return }
+                self.upcomingMovieLists = lists
+                self.movieListsTableView.reloadSections([1], with: .fade)
+            })
+            .store(in: &cancellable)
+        
+        viewModel?.fetchPopularMovieLists()
+        viewModel?.fetchUpcomingMovieLists()
     }
 
 }
@@ -75,15 +112,17 @@ extension MovieLists: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? 1 : 10
+        return section == 0 ? 1 : upcomingMovieLists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PopularMovieTableViewCell.reuseIdentifier, for: indexPath) as? PopularMovieTableViewCell else { return UITableViewCell() }
+            cell.updateUI(lists: popularMovieLists)
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: UpcomingMovieTableViewCell.reuseIdentifier, for: indexPath) as? UpcomingMovieTableViewCell else { return UITableViewCell() }
+            cell.renderUI(movie: upcomingMovieLists[indexPath.row])
             return cell
         }
         
@@ -94,7 +133,8 @@ extension MovieLists: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vc = MovieDetailsModule.createModule() else {return}
+        
+        guard let vc = MovieDetailsModule.createModule(id: upcomingMovieLists[indexPath.row].id) else {return}
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
