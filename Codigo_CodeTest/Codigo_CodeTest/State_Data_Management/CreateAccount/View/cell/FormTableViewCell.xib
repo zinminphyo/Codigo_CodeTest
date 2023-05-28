@@ -57,6 +57,7 @@
             <connections>
                 <outlet property="inputTxtFiel" destination="4a3-a7-edt" id="U5C-9p-NoU"/>
                 <outlet property="titleLabel" destination="ANt-jV-Wr2" id="xGi-cC-zJl"/>
+                <outlet property="underlineView" destination="iAf-Ez-fgH" id="efZ-kx-gmr"/>
             </connections>
             <point key="canvasLocation" x="-16.793893129770993" y="-0.35211267605633806"/>
         </tableViewCell>

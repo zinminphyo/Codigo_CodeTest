@@ -59,6 +59,13 @@ class CreateAccount: UIViewController {
             })
             .store(in: &cancellable)
         
+        viewModel.formIsCompleted
+            .sink(receiveValue: { [weak self] isCompleted in
+                guard let self = self else { return }
+                self.createAccountNowBtn.alpha = isCompleted ? 1.0 : 0.4
+                self.createAccountNowBtn.isUserInteractionEnabled = isCompleted
+            })
+            .store(in: &cancellable)
         
         viewModel.viewDidLoad()
     }
@@ -66,8 +73,14 @@ class CreateAccount: UIViewController {
     
 }
 
+// MARK: - Actions
+extension CreateAccount {
+    @objc func didTapCreateAccountBtn() {
+        print("Create Account Tapped.")
+    }
+}
 
-
+// MARK: - UITableView Data Source.
 extension CreateAccount: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return formLists.count
@@ -81,6 +94,10 @@ extension CreateAccount: UITableViewDataSource, UITableViewDelegate {
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: FormTableViewCell.reuseIdentifier, for: indexPath) as? FormTableViewCell else { return UITableViewCell() }
             cell.updateUI(title: formLists[indexPath.row].title)
+            cell.isEmptyFlag.sink { [weak self] flag in
+                guard let self  = self else { return }
+                self.viewModel.set(flag: !flag, for: self.formLists[indexPath.row])
+            }.store(in: &cancellable)
             return cell
         }
         
