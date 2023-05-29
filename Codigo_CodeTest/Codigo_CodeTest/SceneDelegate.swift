@@ -19,6 +19,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
+        // For State Management
+//        guard let vc = WelcomeModule.createModule() else { return }
+        
+        
+        // For Code Management
+//        guard let vc = MovieListsModule.createModule() else { return } 
+        
+        // For UI
         guard let vc = HomeModule.createModule() else { return }
         let nav = UINavigationController(rootViewController: vc)
         nav.setNavigationBarHidden(true, animated: true)
