@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chivo-Bold.ttf">
+            <string>Chivo-Bold</string>
+        </array>
+        <array key="Chivo-Regular.ttf">
+            <string>Chivo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="261" id="KGk-i7-Jjw" customClass="RoomTableViewCell" customModule="Codigo_CodeTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="261"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beachImage" translatesAutoresizingMaskIntoConstraints="NO" id="C5g-tD-uKo">
+                        <rect key="frame" x="16" y="4" width="288" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Hgm-CG-wqT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deluxe Twin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVY-SU-9LZ">
+                        <rect key="frame" x="16" y="162" width="96" height="21"/>
+                        <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Twin Single Beds, Cable TV, Free Wifi... " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz5-cH-l0H">
+                        <rect key="frame" x="16" y="183" width="186" height="14"/>
+                        <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToV-ol-l5H">
+                        <rect key="frame" x="210" y="162" width="94" height="35"/>
+                        <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="15"/>
+                        <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="View Rates">
+                            <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Avg. Night / Room From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXe-P6-Wq6">
+                        <rect key="frame" x="16" y="224.66666666666666" width="189" height="16.666666666666657"/>
+                        <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="161.42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7L-1Y-BDC">
+                        <rect key="frame" x="247.33333333333334" y="223" width="56.666666666666657" height="20"/>
+                        <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SGD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM7-uw-luA">
+                        <rect key="frame" x="221" y="229" width="24.333333333333343" height="14"/>
+                        <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cja-hx-YkD">
+                        <rect key="frame" x="16" y="251" width="288" height="2"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="HRG-tA-CHm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wVY-SU-9LZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0Oj-aa-klf"/>
+                    <constraint firstItem="cja-hx-YkD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="453-67-uwb"/>
+                    <constraint firstItem="wVY-SU-9LZ" firstAttribute="top" secondItem="C5g-tD-uKo" secondAttribute="bottom" constant="8" id="83e-8E-tQA"/>
+                    <constraint firstAttribute="trailing" secondItem="C5g-tD-uKo" secondAttribute="trailing" constant="16" id="8UC-1x-88j"/>
+                    <constraint firstItem="ToV-ol-l5H" firstAttribute="trailing" secondItem="C5g-tD-uKo" secondAttribute="trailing" id="BK6-hu-vuJ"/>
+                    <constraint firstItem="C5g-tD-uKo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="BNO-FY-hTq"/>
+                    <constraint firstAttribute="bottom" secondItem="cja-hx-YkD" secondAttribute="bottom" constant="8" id="BvG-I8-Bgw"/>
+                    <constraint firstItem="uXe-P6-Wq6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rz5-cH-l0H" secondAttribute="bottom" constant="24" id="GYu-I1-7BB"/>
+                    <constraint firstItem="rz5-cH-l0H" firstAttribute="leading" secondItem="wVY-SU-9LZ" secondAttribute="leading" id="MzH-XK-hcT"/>
+                    <constraint firstItem="ToV-ol-l5H" firstAttribute="bottom" secondItem="rz5-cH-l0H" secondAttribute="bottom" id="Nqf-W3-fMb"/>
+                    <constraint firstItem="uXe-P6-Wq6" firstAttribute="leading" secondItem="wVY-SU-9LZ" secondAttribute="leading" id="RLV-D7-smI"/>
+                    <constraint firstItem="ToV-ol-l5H" firstAttribute="leading" secondItem="rz5-cH-l0H" secondAttribute="trailing" constant="8" id="RO2-vJ-PFD"/>
+                    <constraint firstItem="gM7-uw-luA" firstAttribute="bottom" secondItem="b7L-1Y-BDC" secondAttribute="bottom" id="UqU-UE-e69"/>
+                    <constraint firstItem="rz5-cH-l0H" firstAttribute="top" secondItem="wVY-SU-9LZ" secondAttribute="bottom" id="dNS-yl-m94"/>
+                    <constraint firstItem="C5g-tD-uKo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eng-Gm-fcZ"/>
+                    <constraint firstItem="cja-hx-YkD" firstAttribute="top" secondItem="b7L-1Y-BDC" secondAttribute="bottom" constant="8" id="fNu-nN-whr"/>
+                    <constraint firstItem="ToV-ol-l5H" firstAttribute="top" secondItem="wVY-SU-9LZ" secondAttribute="top" id="ho3-Rl-W0m"/>
+                    <constraint firstItem="b7L-1Y-BDC" firstAttribute="leading" secondItem="gM7-uw-luA" secondAttribute="trailing" constant="2" id="lcP-6j-nEf"/>
+                    <constraint firstItem="b7L-1Y-BDC" firstAttribute="trailing" secondItem="C5g-tD-uKo" secondAttribute="trailing" id="oaT-mS-XGt"/>
+                    <constraint firstItem="b7L-1Y-BDC" firstAttribute="centerY" secondItem="uXe-P6-Wq6" secondAttribute="centerY" id="tbh-6e-WVZ"/>
+                    <constraint firstItem="gM7-uw-luA" firstAttribute="leading" secondItem="uXe-P6-Wq6" secondAttribute="trailing" constant="16" id="w2L-w8-sQ8"/>
+                    <constraint firstAttribute="trailing" secondItem="cja-hx-YkD" secondAttribute="trailing" constant="16" id="x9A-qX-KH5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewRatesButton" destination="ToV-ol-l5H" id="h1D-4C-rX6"/>
+            </connections>
+            <point key="canvasLocation" x="-44.274809160305338" y="95.422535211267615"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beachImage" width="800" height="533"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

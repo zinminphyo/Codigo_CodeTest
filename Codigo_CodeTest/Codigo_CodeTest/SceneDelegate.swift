@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-        guard let vc = MovieListsModule.createModule() else { return }
+        guard let vc = HomeModule.createModule() else { return }
         let nav = UINavigationController(rootViewController: vc)
         nav.setNavigationBarHidden(true, animated: true)
         window?.rootViewController = nav
